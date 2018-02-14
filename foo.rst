@@ -22,7 +22,14 @@ Screen Shots
 
 Typical output of the three algorithms looks like this:
 
+Blocks
+^^^^^^
+
 .. image:: screenshots/blocksTest_screenshot.png
+
+House
+^^^^^
+
 .. image:: screenshots/house_screenshot.png
 
 Package Contents
@@ -84,7 +91,7 @@ There are four external dependencies, all of which are very popular and widely u
 Install
 -------
 
-The recommended way to the install the ftdetect package is from a `universal wheel`_, using pip:
+The recommended way to the install the ftdetect package is from a `universal wheel`_, using pip::
 
     pip install ftdetect
 
