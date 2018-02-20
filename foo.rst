@@ -106,7 +106,7 @@ If desired, the ftdetect package can also support distribution via Python's olde
 Example
 -------
 
-A demo script has been provided, with a couple of standard test images, to help illustrate usage.  To run it from the command line, type::
+A demo script has been provided in order to illustrate usage.  It reproduces the screen shots shown above.  To run it from the command line, type::
 
     python -c "import ftdetect.example; ftdetect.example.demo()"
 
@@ -119,7 +119,7 @@ The demo script is also capable of running on user-selected figures, like so::
 
     ftdetect.example.demo(['filea.jpg', 'fileb.gif', 'filec.png'])
 
-however, execution speed may vary widely.  The SUSAN algorithms in particular are prone to running very slowly on some images, particularly those with large dimensions, textured surfaces, or complicated fine structure.  If that happens, choose another image which is both smaller and doesn't contain as much fine detail.  Another more advanced option is to vary the algorithm input parameters so as to decrease the sensitivity, however, the code provided in the example module, being conceived primarily as instructional in nature, doesn't bother to expose this level of control to the end-user--you'll have to access the algorithms directly from the features module itself in that case. 
+however, execution speed may vary widely.  The SUSAN algorithms in particular are prone to running very slowly on some images, particularly those with large dimensions, textured surfaces, or complicated fine structure.  If that happens, choose another image which is both smaller and doesn't contain as much fine detail.  Another more advanced option is to vary the algorithm input parameters so as to decrease the sensitivity.  However, the code provided in the example module is intended to be introductory, and therefore it simply accepts the default input parameter settings for all algorithms.  If you want to modify the defaults, you'll have to drill down further into the ``features`` module and read the docstrings in order to understand what the input parameters mean. 
 
 References
 ----------
